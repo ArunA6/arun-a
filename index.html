@@ -2,27 +2,31 @@
 <html lang="en">
 
 <head>
-  <title>Arun A</title>
+  <title>AA</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script src="https://kit.fontawesome.com/fdb9835e42.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
 </head>
 <body class="w3-light-grey">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-  <a href="javascript:void()" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
-  <a href="#grid" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+  <a href="javascript:void()" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-32"><i class="fas fa-times" style="font-size: 200%;"></i></a> 
   <a href="#about" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#skills" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SKILLS</a> 
+  <a href="#grid" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PROJECTS</a> 
+  <a href="#xp" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">EXPERIENCE</a>
   <a href="#contact" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">Arun Atchuthananthan</span>
+  <span class="w3-left w3-padding"><b style="font-size: 120%;">A</b>run <b style="font-size: 120%;">A</b>rtchuthananthan</span>
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="menu_open()">☰</a>
 </header>
 
@@ -32,26 +36,8 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
   
-  <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min" id="grid">
-    <div class="w3-quarter">
-      <img src="profile-pic.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-   </div>
-    
-   <div class="w3-quarter">
-      <img src="profile-pic.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="profile-pic.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-    </div>
 
-    <div class="w3-quarter">
-      <img src="profile-pic.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-    </div>
-  </div>
-
-  <!-- Pagination -->
+  <!-- Pagination
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -61,7 +47,7 @@
       <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
-  </div>
+  </div> -->
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -74,100 +60,155 @@
 
   <!-- About section -->
   <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
+    <hr class="w3-opacity">
     <h3 class="sec_title"><b>About Me</b></h3>
     <img src="profile-pic.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Arun Atchuthananthan</h4>
-      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <br>
+      <p> Hello! Welcome to my personal website.<br>
+        Currently, I am a 1st year Computer Science student at the University of Waterloo.
+         On this page, you will find out about me, my interests, experiences, and a portfolio of my personal explorations.
+         I'm passionate about using software to solve problems and cannot wait to see where coding will take me. Please feel free to contact me
+         through any of the links in the Contact section or to download my resume here.
       </p>
-      <p>mail: example@example.com</p>
-      <p>tel: 5353 35531</p>
+      <p><a href="resume.pdf" download><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></a></p>
+      <hr class="w3-opacity" id="skills">
+      <br><br>
+      <h3 class="w3-padding-16">Programming Skills</h3>
+      <p class="w3-wide">Web Development</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">Proficient</div>
+      </div>
+      <br>
+      <p class="w3-wide">Robotics</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">Proficient</div>
+      </div>
+      <br>
+      <p class="w3-wide">Mobile Development</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">Strong</div>
+      </div>
+      <br>
+      <p class="w3-wide">Game Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">Experienced</div>
+      </div>
+      <br>
+      <p class="w3-wide">Machine Learning</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">Learning</div>
+      </div>
+      <br><br>
       <hr class="w3-opacity">
-      <h4 class="w3-padding-16">Programming Skills</h4>
-      <p class="w3-wide">Web Development (HTML/CSS, JS, Bootstrap)</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
-      </div>
-      <p class="w3-wide">App Development (Kotlin, Swift)</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide">Other</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
-      </div>
-      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></p>
-      <hr class="w3-opacity">
-
-      <h4 class="w3-padding-16">How much I charge</h4>
+      
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
           <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">5GB Storage</li>
-            <li class="w3-padding-16">Mail Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
+            <li class="w3-black w3-xlarge w3-padding-32">Languages</li>
+            <li class="w3-padding-16">HTML/CSS</li>
+            <li class="w3-padding-16">JavaScript</li>
+            <li class="w3-padding-16">Java</li>
+            <li class="w3-padding-16">Kotlin</li>
+            <li class="w3-padding-16">C/C++</li>
+            <li class="w3-padding-16">Python</li>
+            <li class="w3-padding-16">PHP</li>
           </ul>
         </div>
         
         <div class="w3-half">
           <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">50GB Storage</li>
-            <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 25</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
+            <li class="w3-black w3-xlarge w3-padding-32">Technology</li>
+            <li class="w3-padding-16">Bootstrap</li>
+            <li class="w3-padding-16">React</li>
+            <li class="w3-padding-16">Firebase</li>
+            <li class="w3-padding-16">Arduino</li>
+            <li class="w3-padding-16">SolidWorks</li>
+            <li class="w3-padding-16">Unity</li>
+            <li class="w3-padding-16">Excel</li>
           </ul>
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr class="w3-opacity">
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Portfolio Photo grid -->
+  <div id="grid">
+    <br>
+    <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
+    <br><br>
+    <h2 class="sec_title"><b>Projects</b></h2>
+    <div class="w3-row w3-grayscale-min">
+      <div class="w3-quarter">
+        <img src="platformer.png" style="width:100%;" onclick="onClick(this)"
+        alt=" <div style='text-align: left'><h2>Java Platformer</h2><br> Endless platformer game with character, difficulty, modeaudio, setting, and  customization. Players can experience endless levels with new features introduced incrementally with player progress. Save options are available, allowing for long-term game continuation, currency systems, in-game shops, and earned achievements.
+        Game asthetics and execution were inspired by and includes game features from Nintendo styled platformers, with Sonic/Mario themed mechanics.
+        <br><br> Made using: Java <a href='https://github.com/ArunA6/Platformer'><i class='fab fa-github popup-icon'></i></a></div>">
+    </div>
+      
+    <div class="w3-quarter">
+        <img src="snipquiz.jpeg" style="width:100%" onclick="onClick(this)"
+        alt=" <div style='text-align: left'><br><h2>SnipQuiz: E-Learning Tool</h2><br> E-learning tool built on a foundation of Python and implemented online using HTML/CSS and Javascript. The tool allows for easy conversion from text in notes, pdf files, and more into excerpts that can be tested in an active memory recall format. This style of memorization/learning has proven useful for countless students
+          including myself and having such a tool makes it easy for students and teachers to facilitate the creation of such tests (built on SnipQuiz). In returning to the project, I am attempting to implement ML into the active-recall test creation process to maximize diversity and effectiveness of test questions while avoiding redundancy.
+          <br><br> Made using: Python, HTML/CSS, JavaScript <a href='https://github.com/ArunA6/SnipQuiz'><i class='fab fa-github popup-icon'></i></a></div>">
+      </div>
+      
+      <div class="w3-quarter">
+        <img src="smart-car.jpeg" style="width:100%; padding-top: 5%; padding-bottom: 7.5%; background: whitesmoke" onclick="onClick(this)"
+        alt=" <div style='text-align: left'><br><h2>Autonomous Arduino Car</h2><br> Autonomous car project was developed as a personal robotics project to apply Arudino and robotics skills I had gained over past years. I built the car using a small arudion model kit, which I expanded upon using 3D Printed parts that I had specifically modelled for this project.
+          As I continue to gn experience with ML, I intend to return to this project and grant the car higher levels of autonomy.
+          <br><br> Made using: C++ (Arduino), SolidWorks <a href='https://github.com/ArunA6/Arduino-Car'><i class='fab fa-github popup-icon'></i></a></div>">
+      </div>
+      <div class="w3-quarter">
+        <img src="catalogue.jpeg" style="width:100%; padding-top: 5%; padding-bottom: 7.5%; background: white" onclick="onClick(this)"
+        alt=" <div style='text-align: left'><br><h2>Digital Catalogue</h2><br> Using a foundation of HTML, CSS, and JavaScript, the main pages of the site allow for optimized searches based on title, author, category, or rating. By implementing backend databases, including FireBase, I enabled login functionality linked to student accounts ranging from school to Google to even other social media platforms.
+          Once logged in, users have access to a greater variety of services, including direct messaging, adding 'friends', leaving book reviews, filtering viewed posts, sharing recommendations, and being displayed on leaderboards for school-verified reading lists.
+          <br><br> Made using: HTML/CSS, JavaScript, Firebase <a href='https://github.com/ArunA6/Catalogue'><i class='fab fa-github popup-icon'></i></a></div>">
       </div>
     </div>
   </div>
 
   <!-- Past Experience Photo Grid -->
   <div id="xp">
-    <h3 class="sec_title"><b>Experiences</b></h3>
+    <br>
+    <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
+    <br>
+    <h2 class="sec_title"><b>Experience</b></h2>
     <div class="w3-row">
       <div class="w3-quarter">
-        <img src="htn.png" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+        <img src="htn.png" style="width:100%" onclick="onClick(this)" alt="<br> 2x Hack the North Competitor <br> YorkU Hacks - Wolfram Award Winner <br> UofT Hacks Competitor <br> 6Hacks Competitor">
      </div>
       
      <div class="w3-quarter">
-        <img src="tks_png.png" style="width:100%; padding-top: 27%; padding-bottom: 25%; background: white" onclick="onClick(this)" alt="A girl, and a train passing">
+        <img src="tks_png.png" style="width:100%; padding-top: 26.8%; padding-bottom: 25%; background: white" onclick="onClick(this)" alt="<br><h2>Innovator and Alumnus @ The Knowledge Society</h2><br>">
       </div>
       
       <div class="w3-quarter">
-        <img src="shad.png" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+        <img src="shad.png" style="width:100%; padding-bottom: 0.5%; background: white" onclick="onClick(this)" alt="<br><h2>Shad @ University of New Brunswick</h2><br> Shad Fellow '19<br>Project Head and Technology Lead for 'Riera' waste manageme startup project<br>Developed 40+ page business plans with digital marketing, robust financial modelling, and 5+ verified sponsors">
       </div>
   
       <div class="w3-quarter">
-        <img src="stem_fellow.png" style="width:100%; padding-top: 12%; padding-bottom: 16%; background: white" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="stem_fellow.png" style="width:100%; padding-top: 12.5%; padding-bottom: 16%; background: white" onclick="onClick(this)" alt="<br><h2>Data Science Outreach Team Member</h2><br>Member of data science comittee<br>Lead in recruiting, marketing, contestant/judge selection for contest with 500+ participants">
       </div>
     </div>
-  </div>>
+  </div>
+
+  <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
 
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px">
-      <h4 class="w3-center"><b>Contact Me</b></h4>
-      <p>If you want to get in touch, please feel free to fill out your infomation below or simply contact me through one of the contacts I have listed below/p>
-      <form action="/action_page.php" target="_blank">
+    <div class="w3-content" style="max-width:600px;">
+      <h2 class="w3-center"><b>Contact Me</b></h2>
+      <p>If you want to get in touch or learn more, please feel free contact me through some of my other pages linked below</p>
+      <i style="margin-bottom: 5%; font-size: 150%;" class="fas fa-chevron-circle-down"></i>
+      <br><br>
+      <!--<form action="/action_page.php" target="_blank">
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
@@ -181,7 +222,13 @@
           <input class="w3-input w3-border" type="text" name="Message" required>
         </div>
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-      </form>
+      </form>-->
+      <!--<a href="https://www.linkedin.com/in/arun-atchuthananthan/"><button type="button" class="btn btn-outline-dark btn-lg"><i class="fab fa-linkedin"></i></button></a><a href="https://github.com/ArunA6"><button type="button" class="btn btn-outline-dark btn-lg"><i class="fab fa-github"></i></button></a>-->
+      <a href="https://www.linkedin.com/in/arun-atchuthananthan/"><i class="fab fa-linkedin contact-icon icon-4x"></i></a>
+      <a href="https://github.com/ArunA6"><i class="fab fa-github contact-icon"></i></a>
+      <a href="https://www.instagram.com/arun.a6/"><i class="fab fa-instagram contact-icon"></i></a>
+      <a href="https://www.facebook.com/arun.atchu6/"><i class="fab fa-facebook contact-icon"></i></a>
+      <a href="mailto:arun.atchuthananthan@gmail.com"><i class="fas fa-envelope contact-icon"></i></a>
     </div>
   </div>
 
@@ -189,34 +236,29 @@
   <footer class="w3-container w3-padding-32 w3-grey">  
     <div class="w3-row-padding">
       <div class="w3-third">
-        <h3>PURPOSE</h3>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+        <h3>Summary</h3>
+        <p>Motivated upcoming computer science professional with both academic and extracurricular experience with game, web, and mobile application development. Proven knowledge in programming, mathematics, and science with zeal for teaching in those areas. Looking to contribute to a team of similarly interested peers.</p>
       </div>
     
       <div class="w3-third">
         <h3>INTERESTS</h3>
         <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+          <span class="w3-tag w3-dark-grey w3-margin-bottom w3-small">Web Development</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mobile Development</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Machine Learning</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Quantum Computing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cloud</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IoT</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Robotics</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Arduuino</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">C.A.D.</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Raspberry Pi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SolidWorks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Java</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">C/C++</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Kotlin</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HTML/CSS</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">JavaScript</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Game Development</span>
         </p>
       </div>
       
       <div class="w3-third">
-        <h3>CONTACT</h3>
+        <h3></h3>
         <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
+          <li class="w3-padding-16">
+            <br><br><br>
+            <span class="w3-large">@ 2022 Arun Atchuthananthan</span><br>
           </li>
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
-          </li> 
         </ul>
       </div>
 
