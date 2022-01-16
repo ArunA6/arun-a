@@ -1,0 +1,61 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif;
+    text-align: center
+}
+.w3-quarter img{
+    margin-bottom: -6px;
+    cursor: pointer
+}
+.w3-quarter img:hover{
+    opacity: 0.6;
+    transition: 0.3s
+}
+.sec_title{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+#xp{
+    padding-bottom: 2%;
+}
+
+#grid{
+    padding-bottom: 2%;
+}
+
+.list-icon{
+    color: black
+}
+
+.contact-icon{
+    font-size: 500%;
+    padding-right: 2%;
+    color: darkgrey;
+}
+
+.contact-icon:hover{
+    color: black;
+}
+
+.popup-icon{
+    font-size: 200%;
+    padding-right: 2%;
+    color: darkgrey;
+}
+
+.popup-icon:hover{
+    color: white;
+}
+
+p{
+    font-size: medium;
+}
+
+.arrow-down{
+    color: white;
+    font-size: 500%;
+}
+
+#resume{
+    align-content: center;
+}
