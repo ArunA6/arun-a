@@ -2,296 +2,239 @@
 <html lang="en">
 
 <head>
-  <title>AA</title>
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AA</title>
+  <link rel="icon" href="code-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/fdb9835e42.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
 </head>
-<body class="w3-light-grey">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-  <a href="javascript:void()" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-32"><i class="fas fa-times" style="font-size: 200%;"></i></a> 
-  <a href="#about" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
-  <a href="#skills" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SKILLS</a> 
-  <a href="#grid" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PROJECTS</a> 
-  <a href="#xp" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">EXPERIENCE</a>
-  <a href="#contact" onclick="menu_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding"><b style="font-size: 120%;">A</b>run <b style="font-size: 120%;">A</b>rtchuthananthan</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="menu_open()">☰</a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="menu_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-  
-
-  <!-- Pagination
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div> -->
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- About section -->
-  <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
-    <hr class="w3-opacity">
-    <h3 class="sec_title"><b>About Me</b></h3>
-    <img src="profile-pic.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Arun Atchuthananthan</h4>
-      <br>
-      <p> Hello! Welcome to my personal website. <br> <br>
-        Currently, I am a third year Computer Science co-op student at the University of Waterloo.
-         On this page, you will find out about me, my interests, experiences, and a portfolio of my personal explorations.
-         I'm passionate about using software to solve problems and cannot wait to see where coding will take me. Please feel free to contact me
-         through any of the links in the Contact section or to download my resume here.
-      </p>
-      <p><a href="resume.pdf" download><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></a></p>
-      <hr class="w3-opacity" id="skills">
-      <br><br>
-      <h3 class="w3-padding-16">Programming Skills</h3>
-      <p class="w3-wide">Web Development</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">Proficient</div>
-      </div>
-      <br>
-      <p class="w3-wide">Robotics</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">Proficient</div>
-      </div>
-      <br>
-      <p class="w3-wide">Mobile Development</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">Strong</div>
-      </div>
-      <br>
-      <p class="w3-wide">Game Design</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">Experienced</div>
-      </div>
-      <br>
-      <p class="w3-wide">Machine Learning</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">Learning</div>
-      </div>
-      <br><br>
-      <hr class="w3-opacity">
-      
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Languages</li>
-            <li class="w3-padding-16">HTML/CSS</li>
-            <li class="w3-padding-16">JavaScript</li>
-            <li class="w3-padding-16">Java</li>
-            <li class="w3-padding-16">Kotlin</li>
-            <li class="w3-padding-16">C/C++</li>
-            <li class="w3-padding-16">Python</li>
-            <li class="w3-padding-16">PHP</li>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>A</span>run <span>A</span>tchuthananthan</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Skills">Skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
-        
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-black w3-xlarge w3-padding-32">Technology</li>
-            <li class="w3-padding-16">Bootstrap</li>
-            <li class="w3-padding-16">React</li>
-            <li class="w3-padding-16">Firebase</li>
-            <li class="w3-padding-16">Arduino</li>
-            <li class="w3-padding-16">SolidWorks</li>
-            <li class="w3-padding-16">Unity</li>
-            <li class="w3-padding-16">Excel</li>
-          </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hi, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Arun <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Skills Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <div>
+          <h1 class="section-title">Dev <span><b>Skills</b></span></h1>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <hr class="w3-opacity">
-        <br><br>
+        <p>A brief summary of my Software Development interests, as a student who has coded personally and professionally since age 10.</p>
       </div>
-    </div>
-  </div>
-
-
-  <!-- Portfolio Photo grid -->
-  <div id="grid">
-    <br>
-    <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
-    <br><br>
-    <h2 class="sec_title"><b>Projects</b></h2>
-    <div class="w3-row w3-grayscale-min">
-      <div class="w3-quarter">
-        <img src="platformer.png" style="width:100%;" onclick="onClick(this)"
-        alt=" <div style='text-align: left'><h2>Java Platformer</h2><br> Endless platformer game with character, difficulty, modeaudio, setting, and  customization. Players can experience endless levels with new features introduced incrementally with player progress. Save options are available, allowing for long-term game continuation, currency systems, in-game shops, and earned achievements.
-        Game asthetics and execution were inspired by and includes game features from Nintendo styled platformers, with Sonic/Mario themed mechanics.
-        <br><br> Made using: Java <a href='https://github.com/ArunA6/Platformer'><i style='font-size: 150%;' class='fa fa-github' aria-hidden='true'></i></a></div>">
-    </div>
-      
-    <div class="w3-quarter">
-        <img src="snipquiz.jpeg" style="width:100%" onclick="onClick(this)"
-        alt=" <div style='text-align: left'><br><h2>SnipQuiz: E-Learning Tool</h2><br> E-learning tool built on a foundation of Python and implemented online using HTML/CSS and Javascript. The tool allows for easy conversion from text in notes, pdf files, and more into excerpts that can be tested in an active memory recall format. This style of memorization/learning has proven useful for countless students
-          including myself and having such a tool makes it easy for students and teachers to facilitate the creation of such tests (built on SnipQuiz). In returning to the project, I am attempting to implement ML into the active-recall test creation process to maximize diversity and effectiveness of test questions while avoiding redundancy.
-          <br><br> Made using: Python, HTML/CSS, JavaScript <a href='https://github.com/ArunA6/SnipQuiz'><i style='font-size: 150%;' class='fa fa-github' aria-hidden='true'></i></a></div>">
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="smart-car.jpeg" style="width:100%; padding-top: 5%; padding-bottom: 7.5%; background: whitesmoke" onclick="onClick(this)"
-        alt=" <div style='text-align: left'><br><h2>Autonomous Arduino Car</h2><br> Autonomous car project was developed as a personal robotics project to apply Arudino and robotics skills I had gained over past years. I built the car using a small arudion model kit, which I expanded upon using 3D Printed parts that I had specifically modelled for this project.
-          As I continue to gn experience with ML, I intend to return to this project and grant the car higher levels of autonomy.<br> MakerFest Toronto 2018 Best in House Award
-          <br><br> Made using: C++ (Arduino), SolidWorks <a href='https://github.com/ArunA6/Arduino-Car'><i style='font-size: 150%;' class='fa fa-github' aria-hidden='true'></i></a></div>">
-      </div>
-      <div class="w3-quarter">
-        <img src="catalogue.jpeg" style="width:100%; padding-top: 5%; padding-bottom: 7.5%; background: white" onclick="onClick(this)"
-        alt=" <div style='text-align: left'><br><h2>Digital Catalogue</h2><br> Using a foundation of HTML, CSS, and JavaScript, the main pages of the site allow for optimized searches based on title, author, category, or rating. By implementing backend databases, including FireBase, I enabled login functionality linked to student accounts ranging from school to Google to even other social media platforms.
-          Once logged in, users have access to a greater variety of services, including direct messaging, adding 'friends', leaving book reviews, filtering viewed posts, sharing recommendations, and being displayed on leaderboards for school-verified reading lists.
-          <br><br> Made using: HTML/CSS, JavaScript, Firebase <a href='https://github.com/ArunA6/Catalogue'><i style='font-size: 150%;' class='fa fa-github' aria-hidden='true'></i></a></div>">
-      </div>
-    </div>
-  </div>
-
-  <!-- Past Experience Photo Grid -->
-  <div id="xp">
-    <br>
-    <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
-    <br>
-    <h2 class="sec_title"><b>Experience</b></h2>
-    <div class="w3-row">
-      <div class="w3-quarter">
-        <img src="htn.png" style="width:100%" onclick="onClick(this)" alt="<br> 2x Hack the North Competitor <br> YorkU Hacks - Wolfram Award Winner <br> UofT Hacks Competitor <br> 6Hacks Competitor">
-     </div>
-      
-     <div class="w3-quarter">
-        <img src="tks_png.png" style="width:100%; padding-top: 26.8%; padding-bottom: 25%; background: white" onclick="onClick(this)" alt="<br><h2>Innovator and Alumnus @ The Knowledge Society</h2><br>Entrepreneur involved in over 5 disctinct startup projects, having presented at MaRs Labs, attended networking events, and professional development incubators at companies including RBC and Shopify">
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="shad.png" style="width:100%; padding-bottom: 0.5%; background: white" onclick="onClick(this)" alt="<br><h2>Shad @ University of New Brunswick</h2><br> Shad Fellow '19<br>Project Head and Technology Lead for 'Riera' waste manageme startup project<br>Developed 40+ page business plans with digital marketing, robust financial modelling, and 5+ verified sponsors">
-      </div>
-  
-      <div class="w3-quarter">
-        <img src="stem_fellow.png" style="width:100%; padding-top: 12.5%; padding-bottom: 16%; background: white" onclick="onClick(this)" alt="<br><h2>Data Science Outreach Team Member</h2><br>Member of data science comittee<br>Lead in recruiting, marketing, contestant/judge selection for contest with 500+ participants">
-      </div>
-    </div>
-  </div>
-
-  <hr class="w3-opacity" style="width: 80%; margin-left: 10%;">
-
-  <!-- Contact section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px;">
-      <h2 class="w3-center"><b>Contact Me</b></h2>
-      <p>If you want to get in touch or learn more, please feel free contact me through some of my other pages linked below</p>
-      <i style="margin-bottom: 5%; font-size: 150%;" class="fa fa-angle-double-down" aria-hidden="true"></i>
-      <br>
-      <!--<form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/cloud-network.png" /></div>
+          <h2>Web</h2>
+          <p>HTML/CSS, Javascript, React, Bootstrap, Spring, FireBase, SQL, Postgres</p>
         </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/smartphone-tablet.png" /></div>
+          <h2>Mobile</h2>
+          <p>Kotlin, Java, Swift, Flutter; Extended professional + personal experience in Android Studio</p>
         </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/apple-arcade.png" /></div>
+          <h2>Game</h2>
+          <p>Java, C++, C#, Unity</p>
+          <br>
+          <br>
+          <br>
+          <br>
         </div>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-      </form>-->
-      <!--<a href="https://www.linkedin.com/in/arun-atchuthananthan/"><button type="button" class="btn btn-outline-dark btn-lg"><i class="fab fa-linkedin"></i></button></a><a href="https://github.com/ArunA6"><button type="button" class="btn btn-outline-dark btn-lg"><i class="fab fa-github"></i></button></a>-->
-      <a href="https://www.linkedin.com/in/arun-atchuthananthan/"><i style="font-size: 250%;" class="fa fa-linkedin-square fa-xl" aria-hidden="true"></i></a>
-      <a href="https://github.com/ArunA6"><i style="font-size: 250%;" class="fa fa-github-square" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/arun.a6/"><i style="font-size: 250%;" class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/arun.atchu6/"><i style="font-size: 250%;" class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href="mailto:arun.atchuthananthan@gmail.com"><i style="font-size: 250%;" class="fa fa-envelope" aria-hidden="true"></i></a>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/mind-map.png" /></div>
+          <h2>AI / ML</h2>
+          <p>Education: Candidate for Bachelor Computer Science, Specializing in AI</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  <!-- End Skills Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Personal <span><b>Projects</b></span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Lyrify</h1>
+            <h2 style="color: crimson;"><em>Javascript, Bootstrap, React</em></h2>
+            <p>Music lyric generation and search application developed with Spotify API 
+              playback using Javascript and React. Since the initial development of this idea, 
+              Spotify has implemented their own lyric generation feature, affirming the need
+              for one in any music playback app. I continue to iterate on this project, 
+              currently attempting to generate QR codes for users to share lyrics/timestamps
+              <a href='https://github.com/ArunA6/Lyrify'><i class='fa fa-github' aria-hidden='true'></i></a></p>
+          </div>
+          <div class="project-img">
+            <img src="spotify-lyrics.webp" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sonic Levels</h1>
+            <h2 style="color: crimson;"><em>Java, Firebase</em></h2>
+            <p><a href='https://github.com/ArunA6/Platformer'><i class='fa fa-github' aria-hidden='true'></i></a></p>
+          </div>
+          <div class="project-img">
+            <img src="sonic-levels.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>RAIINET++</h1>
+            <h2 style="color: crimson;"><em>C++, X11 GUI</em></h2>
+            <p><a href='https://github.com/ArunA6/RAIINET-Plus'><i class='fa fa-github' aria-hidden='true'></i></a></p>
+          </div>
+          <div class="project-img">
+            <img src="raiinet.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Auto Kart</h1>
+            <h2 style="color: crimson;"><em>Arduino, C, Raspberry Pi</em></h2>
+            <p><a href='https://github.com/ArunA6/Arduino-car'><i class='fa fa-github' aria-hidden='true'></i></a></p>
+          </div>
+          <div class="project-img">
+            <img src="kart.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Coming Soon...</h1>
+            <h2 style="color: crimson;"><em>ML/AI, Kotlin, Flutter, and more!</em></h2>
+            <p>Constantly exploring new areas through coursework, extracurriculars, and (hopefully!) future internships! I am currently shifting my focus towards ML and LLM.</p>
+          </div>
+          <div class="project-img">
+            <img src="network.jpeg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="profile-pic.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span><b>me</b></span></h1>
+        <h2>Software Developer</h2>
+        <p>Currently, I am a 3rd year Computer Science student at the University of Waterloo.
+          On this page, you will find out about me, my interests, experiences, and a portfolio of my personal explorations.
+          I'm passionate about using software to solve problems and cannot wait to see where this creative journey will take me. Please feel free to contact me
+          through any of the links in the Contact section or to download my resume here!</p>
+        <a href="resume.pdf" class="cta">View Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span><b>Info</b></span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+1 647 929 3426</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>aatchuth@uwaterloo.ca</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Location</h1>
+            <h2>Toronto - Waterloo, ON, CA</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>Summary</h3>
-        <p>Motivated upcoming computer science professional with both academic and extracurricular experience with game, web, and mobile application development. Proven knowledge in programming, mathematics, and science with zeal for teaching in those areas. Looking to contribute to a team of similarly interested peers.</p>
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>run <span>A</span>tchuthananthan</h1>
       </div>
-    
-      <div class="w3-third">
-        <h3>INTERESTS</h3>
-        <p>
-          <span class="w3-tag w3-dark-grey w3-margin-bottom w3-small">Web Development</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mobile Development</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Machine Learning</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Quantum Computing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cloud</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IoT</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Robotics</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Arduuino</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">C.A.D.</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Raspberry Pi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SolidWorks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Java</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">C/C++</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Kotlin</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HTML/CSS</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">JavaScript</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Game Development</span>
-        </p>
+      <h2>Build and Believe</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/arun-atchu/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/ArunA6"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="mailto:aatchuth@uwaterloo.ca"><img src="https://img.icons8.com/bubbles/100/000000/gmail.png" /></a>
+        </div>
       </div>
-      
-      <div class="w3-third">
-        <h3></h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16">
-            <br><br><br>
-            <span class="w3-large">@ 2022 Arun Atchuthananthan</span><br>
-          </li>
-        </ul>
-      </div>
-
-      
+      <a href="https://icons8.com/"><p>Using Icons8</p></a>
     </div>
-  </footer>
-
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function menu_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function menu_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-
-
+  </section>
+  <!-- End Footer -->
+  <script src="./script.js"></script>
 </body>
+
 </html>
