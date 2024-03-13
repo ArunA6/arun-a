@@ -2,4 +2,4 @@
 Personal Portfolio Site
 Updated version: January 2024
 
-Built upon past personal website models, made using basic HTML/CSS/JS.
+Feel free to take a look at the site and contact me regarding opportunties, questions, or any feedback! Thanks for visiting!
