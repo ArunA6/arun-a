@@ -4,258 +4,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AA</title>
+  <title>Arun Atchuthananthan</title>
+  <meta name="description" content="Arun Atchuthananthan — Computer Science student, University of Waterloo.">
   <link rel="icon" href="code-icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/fdb9835e42.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>A</span>run <span>A</span>tchuthananthan</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Skills">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Section nav -->
+  <nav class="rail" aria-label="Section navigation">
+    <a href="#skills">/skills</a>
+    <a href="#projects">/projects</a>
+    <a href="#about">/about</a>
+    <a href="#contact">/contact</a>
+  </nav>
 
-  
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hi, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Arun <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- Hero -->
+    <header class="hero" id="top">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-path">~/arun-atchuthananthan</span>
+        </div>
+        <div class="terminal-body">
+          <p class="cmd">$ whoami</p>
+          <h1 class="typewriter">Arun Atchuthananthan</h1>
+          <p class="subtitle">Computer Science Student, University of Waterloo</p>
 
-  <br><br><br><br><br><br>
+          <p class="cmd">$ cat contact.txt</p>
+          <p class="kv">
+            <a href="mailto:aatchuth@uwaterloo.ca">aatchuth@uwaterloo.ca</a>
+            <span class="sep">|</span>
+            +1 647 929 3426
+          </p>
 
-  <center><div class="spinner">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div> </center>
+          <p class="cmd">$ wget</p>
+          <p class="kv">
+            <a href="https://www.linkedin.com/in/arun-atchu/" target="_blank" rel="noopener">linkedin.com/in/arun-atchu</a>
+            <span class="sep">&amp;</span>
+            <a href="https://github.com/ArunA6" target="_blank" rel="noopener">github.com/ArunA6</a>
+          </p>
 
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <div>
-          <h1 class="section-title">Dev <span><b>Skills</b></span></h1>
-        </div>
-        <p>A brief summary of my Software Development interests, as a student who has coded personally and professionally since age 10.</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/cloud-network.png" /></div>
-          <h2>Web</h2>
-          <p>HTML/CSS, Javascript, React, Bootstrap, Spring, FireBase, SQL, Postgres</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/smartphone-tablet.png" /></div>
-          <h2>Mobile</h2>
-          <p>Kotlin, Java, Swift, Flutter; Extended professional + personal experience in Android Studio</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/apple-arcade.png" /></div>
-          <h2>Game</h2>
-          <p>Java, C++, C#, Unity</p>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/mind-map.png" /></div>
-          <h2>AI / ML</h2>
-          <p>Education: Candidate for Bachelor Computer Science, Specializing in AI</p>
+          <p class="cmd">$ open resume.pdf</p>
+          <p class="kv"><a href="resume.pdf" target="_blank">view resume &rarr;</a></p>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Personal <span><b>Projects</b></span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Rate-It</h1>
-            <h2 style="color: crimson;"><em>Python, Flask, Javascript</em></h2>
-            <p>Sentiment analysis web app to evaluate and categorize human sentiments within
-              provided text. The interface prototype was built using Python, Flask, and Javascript along
-              with Python libraries like textblob to process plain text or csv files. Currently refactoring 
-              the UI and backend to optimize for social post analysis through provided links.
-              <a href='https://github.com/ArunA6/Rate-It'><i class='fa fa-github' aria-hidden='true'></i></a></p>
-          </div>
-          <div class="project-img">
-            <img src="rate-it-proto.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Lyrify</h1>
-            <h2 style="color: crimson;"><em>Javascript, Bootstrap, React</em></h2>
-            <p>Music lyric generation and search application developed with Spotify API 
-              playback using Javascript and React. Since the initial development of this idea, 
-              Spotify has implemented their own lyric generation feature, affirming the need
-              for one in any music playback app. I continue to iterate on this project, 
-              currently attempting to generate QR codes for users to share lyrics/timestamps
-              <a href='https://github.com/ArunA6/Lyrify'><i class='fa fa-github' aria-hidden='true'></i></a></p>
-          </div>
-          <div class="project-img">
-            <img src="spotify-lyrics.webp" alt="img">
+    <!-- Skills -->
+    <section id="skills">
+      <details class="dir" open>
+        <summary><span class="dir-name">/skills</span><span class="dir-toggle">ls</span></summary>
+        <div class="dir-body">
+          <p class="lede">A brief summary of my software development interests, as a student who has coded personally and professionally since age 10.</p>
+          <div class="grid grid-4">
+            <div class="card">
+              <h3>Web</h3>
+              <p>HTML/CSS, JavaScript, React, Bootstrap, Spring, Firebase, SQL, Postgres</p>
+            </div>
+            <div class="card">
+              <h3>Mobile</h3>
+              <p>Kotlin, Java, Swift, Flutter; extended professional and personal experience in Android Studio</p>
+            </div>
+            <div class="card">
+              <h3>Game</h3>
+              <p>Java, C++, C#, Unity</p>
+            </div>
+            <div class="card">
+              <h3>AI / ML</h3>
+              <p>Candidate for Bachelor of Computer Science, specializing in AI</p>
+            </div>
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Sonic Levels</h1>
-            <h2 style="color: crimson;"><em>Java, Firebase</em></h2>
-            <p>2D platformer game with stylized pixel art to match the aesthetic of major titles 
-              such as Mario and Sonic. This Java-based game draws inspiration from both and adds unique 
-              game experiences such as levels, in-game transactions, character customization, and 
-              limited power-ups<a href='https://github.com/ArunA6/Platformer'><i class='fa fa-github' aria-hidden='true'></i></a></p>
-          </div>
-          <div class="project-img">
-            <img src="sonic-levels.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>RAIINET++</h1>
-            <h2 style="color: crimson;"><em>C++, X11 GUI</em></h2>
-            <p>Multiplayer strategy game named after the development concept of RAII(Resource Acquisition
-              Is Initialization). Using that to optimize game generation as well as other OOP tenets, the 
-              game offers both text and graphical interfances for players to compete in an engaging setting.
-              <a href='https://github.com/ArunA6/RAIINET-documentation'><i class='fa fa-github' aria-hidden='true'></i></a></p>
-          </div>
-          <div class="project-img">
-            <img src="raiinet.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Auto Kart</h1>
-            <h2 style="color: crimson;"><em>Arduino, C, Raspberry Pi</em></h2>
-            <p>Autonomous robotic car build with on a basis of Arduino robotics. While the intial prototyle was
-              built to quickly navigate mazes and tracks, I have since had many iterations including gesture controlled 
-              driving with a Raspberry Pi and even a full-sized motorized cart adaptation.
-              <a href='https://github.com/ArunA6/Arduino-car'><i class='fa fa-github' aria-hidden='true'></i></a></p>
-          </div>
-          <div class="project-img">
-            <img src="kart.jpeg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Coming Soon...</h1>
-            <h2 style="color: crimson;"><em>ML/AI, Kotlin, Flutter, and more!</em></h2>
-            <p>Constantly exploring new areas through coursework, extracurriculars, and (hopefully!) future internships!
-              I am currently shifting my focus towards ML and LLMs.</p>
-          </div>
-          <div class="project-img">
-            <img src="network.jpeg" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </details>
+    </section>
 
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="profile-pic.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span><b>me</b></span></h1>
-        <h2>Software Developer</h2>
-        <p>I am currently an Software Development Engineer Intern at Amazon Web Services (AWS) in Toronto and as well as a 4th year Computer Science undergrad at the University of Waterloo.
-          On this page, you can find out about me, my interests, experiences, and personal explorations.
-          I'm passionate about using software to solve problems and am constantly excited by opportunities to explore the bleeding-edge of this field. Please feel free to contact me
-          through any of Contact links or to download my resume here!</p>
-        <a href="resume.pdf" class="cta">View Resume</a>
-      </div>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section id="projects">
+      <details class="dir" open>
+        <summary><span class="dir-name">/projects</span><span class="dir-toggle">ls</span></summary>
+        <div class="dir-body">
+          <div class="projects">
 
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span><b>Info</b></span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 647 929 3426</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>aatchuth@uwaterloo.ca</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Location</h1>
-            <h2>Toronto, ON</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <article class="project">
+              <div class="project-text">
+                <h3>Rate-It <a class="gh" href="https://github.com/ArunA6/Rate-It" target="_blank" rel="noopener">[github]</a></h3>
+                <p class="tech">Python &middot; Flask &middot; JavaScript</p>
+                <p>Sentiment analysis web app to evaluate and categorize human sentiments within provided text. The interface prototype was built using Python, Flask, and JavaScript along with Python libraries like TextBlob to process plain text or CSV files. Currently refactoring the UI and backend to optimize for social post analysis through provided links.</p>
+              </div>
+              <div class="project-img"><img src="rate-it-proto.png" alt="Rate-It screenshot" loading="lazy"></div>
+            </article>
 
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>A</span>run <span>A</span>tchuthananthan</h1>
-      </div>
-      <h2>Build and Believe</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/arun-atchu/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></a>
+            <article class="project">
+              <div class="project-text">
+                <h3>Lyrify <a class="gh" href="https://github.com/ArunA6/Lyrify" target="_blank" rel="noopener">[github]</a></h3>
+                <p class="tech">JavaScript &middot; Bootstrap &middot; React</p>
+                <p>Music lyric generation and search application developed with Spotify API playback using JavaScript and React. Since the initial development of this idea, Spotify has implemented its own lyric generation feature, affirming the need for one in any music playback app. I continue to iterate on this project, currently attempting to generate QR codes for users to share lyrics and timestamps.</p>
+              </div>
+              <div class="project-img"><img src="spotify-lyrics.webp" alt="Lyrify screenshot" loading="lazy"></div>
+            </article>
+
+            <article class="project">
+              <div class="project-text">
+                <h3>Sonic Levels <a class="gh" href="https://github.com/ArunA6/Platformer" target="_blank" rel="noopener">[github]</a></h3>
+                <p class="tech">Java &middot; Firebase</p>
+                <p>2D platformer game with stylized pixel art to match the aesthetic of major titles such as Mario and Sonic. This Java-based game draws inspiration from both and adds unique game experiences such as levels, in-game transactions, character customization, and limited power-ups.</p>
+              </div>
+              <div class="project-img"><img src="sonic-levels.png" alt="Sonic Levels screenshot" loading="lazy"></div>
+            </article>
+
+            <article class="project">
+              <div class="project-text">
+                <h3>RAIINET++ <a class="gh" href="https://github.com/ArunA6/RAIINET-documentation" target="_blank" rel="noopener">[github]</a></h3>
+                <p class="tech">C++ &middot; X11 GUI</p>
+                <p>Multiplayer strategy game named after the development concept of RAII (Resource Acquisition Is Initialization). Using that to optimize game generation as well as other OOP tenets, the game offers both text and graphical interfaces for players to compete in an engaging setting.</p>
+              </div>
+              <div class="project-img"><img src="raiinet.png" alt="RAIINET++ screenshot" loading="lazy"></div>
+            </article>
+
+            <article class="project">
+              <div class="project-text">
+                <h3>Auto Kart <a class="gh" href="https://github.com/ArunA6/Arduino-car" target="_blank" rel="noopener">[github]</a></h3>
+                <p class="tech">Arduino &middot; C &middot; Raspberry Pi</p>
+                <p>Autonomous robotic car built on a basis of Arduino robotics. While the initial prototype was built to quickly navigate mazes and tracks, I have since had many iterations including gesture-controlled driving with a Raspberry Pi and even a full-sized motorized cart adaptation.</p>
+              </div>
+              <div class="project-img"><img src="kart.jpeg" alt="Auto Kart photo" loading="lazy"></div>
+            </article>
+
+            <article class="project">
+              <div class="project-text">
+                <h3>Coming Soon&hellip;</h3>
+                <p class="tech">ML/AI &middot; Kotlin &middot; Flutter &middot; and more</p>
+                <p>Constantly exploring new areas through coursework, extracurriculars, and (hopefully!) future internships. I am currently shifting my focus towards ML and LLMs.</p>
+              </div>
+              <div class="project-img"><img src="network.jpeg" alt="Network graphic" loading="lazy"></div>
+            </article>
+
+          </div>
         </div>
-        <div class="social-item">
-          <a href="https://github.com/ArunA6"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
+      </details>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <details class="dir" open>
+        <summary><span class="dir-name">/about</span><span class="dir-toggle">ls</span></summary>
+        <div class="dir-body">
+          <div class="about">
+            <div class="about-img">
+              <img src="profile-pic.jpg" alt="Portrait of Arun Atchuthananthan">
+            </div>
+            <div class="about-text">
+              <h3>Software Developer</h3>
+              <p>Currently, I am a 3rd year Computer Science student at the University of Waterloo. On this page, you'll find out about me, my interests, experiences, and a portfolio of my personal explorations. I'm passionate about using software to solve problems and cannot wait to see where this creative journey will take me.</p>
+              <p>Feel free to contact me through any of the links below, or download my resume.</p>
+              <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+            </div>
+          </div>
         </div>
-        <div class="social-item">
-          <a href="mailto:aatchuth@uwaterloo.ca"><img src="https://img.icons8.com/bubbles/100/000000/gmail.png" /></a>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <details class="dir" open>
+        <summary><span class="dir-name">/contact</span><span class="dir-toggle">ls</span></summary>
+        <div class="dir-body">
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Phone</h3>
+              <p>+1 647 929 3426</p>
+            </div>
+            <div class="card">
+              <h3>Email</h3>
+              <p><a href="mailto:aatchuth@uwaterloo.ca">aatchuth@uwaterloo.ca</a></p>
+            </div>
+            <div class="card">
+              <h3>Location</h3>
+              <p>Toronto &ndash; Waterloo, ON, CA</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <a href="https://icons8.com/"><p>Using Icons8</p></a>
-    </div>
-  </section>
-  <script src="./script.js"></script>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p class="brand">Arun Atchuthananthan</p>
+    <p class="motto">Build and Believe</p>
+    <p class="social">
+      <a href="https://www.linkedin.com/in/arun-atchu/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="sep">&middot;</span>
+      <a href="https://github.com/ArunA6" target="_blank" rel="noopener">GitHub</a>
+      <span class="sep">&middot;</span>
+      <a href="mailto:aatchuth@uwaterloo.ca">Email</a>
+    </p>
+  </footer>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 # arun-a
-Personal Portfolio Site
 
-Feel free to take a look at the site and contact me regarding opportunties, questions, or any feedback! Thanks for visiting!
+Source for [arunatchu.tech](https://arunatchu.tech) — Arun Atchuthananthan's personal portfolio.
+
+Static site, no build step: open `index.html` or serve the folder with any static file server.
