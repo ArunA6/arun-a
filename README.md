@@ -1,5 +1,5 @@
 # arun-a
 
-Source for [arunatchu.tech](https://arunatchu.tech) — Arun Atchuthananthan's personal portfolio.
+Source code supporting [arunatchu.tech](https://arunatchu.tech) — my personal portfolio.
 
-Static site, no build step: open `index.html` or serve the folder with any static file server.
+To view: simply open follow the URL, open, `index.html`, or serve the folder with any static file server.
