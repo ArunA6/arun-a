@@ -13,9 +13,10 @@
 <body>
   <!-- Section nav -->
   <nav class="rail" aria-label="Section navigation">
-    <a href="#skills">/skills</a>
+    <a href="#education">/education</a>
+    <a href="#experience">/experience</a>
     <a href="#projects">/projects</a>
-    <a href="#about">/about</a>
+    <a href="#skills">/skills</a>
     <a href="#contact">/contact</a>
   </nav>
 
@@ -32,7 +33,7 @@
         <div class="terminal-body">
           <p class="cmd">$ whoami</p>
           <h1 class="typewriter">Arun Atchuthananthan</h1>
-          <p class="subtitle">Computer Science Student, University of Waterloo</p>
+          <p class="subtitle">Computer Science Graduate, University of Waterloo</p>
 
           <p class="cmd">$ cat contact.txt</p>
           <p class="kv">
@@ -54,29 +55,83 @@
       </div>
     </header>
 
-    <!-- Skills -->
-    <section id="skills">
+    <!-- Education -->
+    <section id="education">
       <details class="dir" open>
-        <summary><span class="dir-name">/skills</span><span class="dir-toggle">ls</span></summary>
+        <summary><span class="dir-name">/education</span><span class="dir-toggle">ls</span></summary>
         <div class="dir-body">
-          <p class="lede">A brief summary of my software development interests, as a student who has coded personally and professionally since age 10.</p>
-          <div class="grid grid-4">
-            <div class="card">
-              <h3>Web</h3>
-              <p>HTML/CSS, JavaScript, React, Bootstrap, Spring, Firebase, SQL, Postgres</p>
+          <div class="bio">
+            <div class="bio-img">
+              <img src="profile-pic.jpg" alt="Portrait of Arun Atchuthananthan">
             </div>
-            <div class="card">
-              <h3>Mobile</h3>
-              <p>Kotlin, Java, Swift, Flutter; extended professional and personal experience in Android Studio</p>
+            <div class="bio-text">
+              <h3>University of Waterloo</h3>
+              <p class="degree">Bachelor of Computer Science (BCS)</p>
+              <ul class="honours">
+                <li class="highlight">94.2% Cumulative GPA</li>
+                <li>Dean's Honours</li>
+                <li>Randall J Howard Entrance Scholarship</li>
+                <li>President's Scholarship of Distinction</li>
+                <li>President's International Experience Award</li>
+              </ul>
             </div>
-            <div class="card">
-              <h3>Game</h3>
-              <p>Java, C++, C#, Unity</p>
-            </div>
-            <div class="card">
-              <h3>AI / ML</h3>
-              <p>Candidate for Bachelor of Computer Science, specializing in AI</p>
-            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <details class="dir" open>
+        <summary><span class="dir-name">/experience</span><span class="dir-toggle">ls</span></summary>
+        <div class="dir-body">
+          <div class="experiences">
+
+            <article class="experience">
+              <div class="exp-head">
+                <h3>Meta</h3>
+                <span class="exp-role">Software Engineer Intern</span>
+              </div>
+              <p class="exp-team">Facebook Stories Rankings Team</p>
+              <ul class="exp-points">
+                <li>Built custom AI agents for specialized maintenance, evaluation, and debugging tasks for models serving 600+ million MAUs.</li>
+              </ul>
+            </article>
+
+            <article class="experience">
+              <div class="exp-head">
+                <h3>Amazon Web Services</h3>
+                <span class="exp-role">Software Development Engineer Intern</span>
+              </div>
+              <p class="exp-team">DocumentDB Global Availability Team</p>
+              <ul class="exp-points">
+                <li>Redesigned and implemented new control plane canaries to improve testing efficiency and coverage for the AWS service globally.</li>
+              </ul>
+            </article>
+
+            <article class="experience">
+              <div class="exp-head">
+                <h3>X (Twitter)</h3>
+                <span class="exp-role">Software Engineer Intern</span>
+              </div>
+              <p class="exp-team">Mobile Platform Team</p>
+              <ul class="exp-points">
+                <li>Developed modernized Android features with KMP, including enriched Lists timelines and OCF registration, serving 240+ million MAUs.</li>
+              </ul>
+            </article>
+
+            <article class="experience">
+              <div class="exp-head">
+                <h3>RouteThis</h3>
+                <span class="exp-role">Software Engineer Intern</span>
+              </div>
+              <p class="exp-team">Certify Team</p>
+              <ul class="exp-points">
+                <li>Built a new network measurement framework and corresponding front-end user flow to reduce network accuracy variance below 2% and detect network events.</li>
+                <li>Researched and prototyped calibration improvements using sensor fusion.</li>
+              </ul>
+            </article>
+
           </div>
         </div>
       </details>
@@ -93,7 +148,7 @@
               <div class="project-text">
                 <h3>Rate-It <a class="gh" href="https://github.com/ArunA6/Rate-It" target="_blank" rel="noopener">[github]</a></h3>
                 <p class="tech">Python &middot; Flask &middot; JavaScript</p>
-                <p>Sentiment analysis web app to evaluate and categorize human sentiments within provided text. The interface prototype was built using Python, Flask, and JavaScript along with Python libraries like TextBlob to process plain text or CSV files. Currently refactoring the UI and backend to optimize for social post analysis through provided links.</p>
+                <p>Sentiment analysis web app to evaluate and categorize human sentiments within provided text. The interface prototype was built using Python, Flask, and JavaScript along with Python libraries like TextBlob to process plain text or CSV files. </p>
               </div>
               <div class="project-img"><img src="rate-it-proto.png" alt="Rate-It screenshot" loading="lazy"></div>
             </article>
@@ -102,16 +157,16 @@
               <div class="project-text">
                 <h3>Lyrify <a class="gh" href="https://github.com/ArunA6/Lyrify" target="_blank" rel="noopener">[github]</a></h3>
                 <p class="tech">JavaScript &middot; Bootstrap &middot; React</p>
-                <p>Music lyric generation and search application developed with Spotify API playback using JavaScript and React. Since the initial development of this idea, Spotify has implemented its own lyric generation feature, affirming the need for one in any music playback app. I continue to iterate on this project, currently attempting to generate QR codes for users to share lyrics and timestamps.</p>
+                <p>Music lyric generation and search application developed with Spotify API playback using JavaScript and React. Since the initial development of this idea, Spotify has implemented its own lyric generation feature, affirming the need for one in any music playback app.</p>
               </div>
               <div class="project-img"><img src="spotify-lyrics.webp" alt="Lyrify screenshot" loading="lazy"></div>
             </article>
 
             <article class="project">
               <div class="project-text">
-                <h3>Sonic Levels <a class="gh" href="https://github.com/ArunA6/Platformer" target="_blank" rel="noopener">[github]</a></h3>
+                <h3>Levelling <a class="gh" href="https://github.com/ArunA6/Platformer" target="_blank" rel="noopener">[github]</a></h3>
                 <p class="tech">Java &middot; Firebase</p>
-                <p>2D platformer game with stylized pixel art to match the aesthetic of major titles such as Mario and Sonic. This Java-based game draws inspiration from both and adds unique game experiences such as levels, in-game transactions, character customization, and limited power-ups.</p>
+                <p>2D platformer game with stylized pixel art to match the aesthetic of major game titles while expanding on mechanics such as levels, in-game transactions, character customization, and limited power-ups.</p>
               </div>
               <div class="project-img"><img src="sonic-levels.png" alt="Sonic Levels screenshot" loading="lazy"></div>
             </article>
@@ -137,8 +192,8 @@
             <article class="project">
               <div class="project-text">
                 <h3>Coming Soon&hellip;</h3>
-                <p class="tech">ML/AI &middot; Kotlin &middot; Flutter &middot; and more</p>
-                <p>Constantly exploring new areas through coursework, extracurriculars, and (hopefully!) future internships. I am currently shifting my focus towards ML and LLMs.</p>
+                <p class="tech">AI/ML &middot; Trading Systems</p>
+                <p>Applying my AI/ML experience to trading software that automates my personal investment portfolio.</p>
               </div>
               <div class="project-img"><img src="network.jpeg" alt="Network graphic" loading="lazy"></div>
             </article>
@@ -148,20 +203,65 @@
       </details>
     </section>
 
-    <!-- About -->
-    <section id="about">
+    <!-- Skills -->
+    <section id="skills">
       <details class="dir" open>
-        <summary><span class="dir-name">/about</span><span class="dir-toggle">ls</span></summary>
+        <summary><span class="dir-name">/skills</span><span class="dir-toggle">ls</span></summary>
         <div class="dir-body">
-          <div class="about">
-            <div class="about-img">
-              <img src="profile-pic.jpg" alt="Portrait of Arun Atchuthananthan">
+          <div class="skill-category">
+            <h3>AI / ML</h3>
+            <div class="skill-grid">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>Scikit-learn</span>
+              <span>LangChain</span>
+              <span>MCP</span>
             </div>
-            <div class="about-text">
-              <h3>Software Developer</h3>
-              <p>Currently, I am a 3rd year Computer Science student at the University of Waterloo. On this page, you'll find out about me, my interests, experiences, and a portfolio of my personal explorations. I'm passionate about using software to solve problems and cannot wait to see where this creative journey will take me.</p>
-              <p>Feel free to contact me through any of the links below, or download my resume.</p>
-              <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+          </div>
+
+          <div class="skill-category">
+            <h3>Infra &amp; Databases</h3>
+            <div class="skill-grid">
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Full-Stack &mdash; Frontend &amp; Backend</h3>
+            <div class="skill-grid">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Node</span>
+              <span>Django</span>
+              <span>Spring</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Mobile</h3>
+            <div class="skill-grid">
+              <span>Kotlin</span>
+              <span>Compose</span>
+              <span>KMP</span>
+              <span>Java</span>
+              <span>Swift</span>
+              <span>Flutter</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Hardware</h3>
+            <div class="skill-grid">
+              <span>Arduino</span>
+              <span>Raspberry Pi</span>
+              <span>C.A.D.</span>
+              <span>C/C++</span>
             </div>
           </div>
         </div>
@@ -184,7 +284,7 @@
             </div>
             <div class="card">
               <h3>Location</h3>
-              <p>Toronto &ndash; Waterloo, ON, CA</p>
+              <p>Toronto &ndash; San Francisco</p>
             </div>
           </div>
         </div>

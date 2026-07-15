@@ -214,16 +214,11 @@ section {
   gap: 16px;
 }
 
-.grid-4 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 640px) {
-  .grid-4,
   .grid-3 {
     grid-template-columns: 1fr;
   }
@@ -249,6 +244,109 @@ section {
 .card p {
   color: var(--text-dim);
   font-size: 0.9rem;
+}
+
+/* Skills */
+.skill-category {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.skill-category + .skill-category {
+  margin-top: 16px;
+}
+
+.skill-category h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.skill-grid span {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-grid span:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+/* Experience */
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: border-color 0.2s ease;
+}
+
+.experience:hover {
+  border-color: var(--accent);
+}
+
+.exp-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.exp-head h3 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.exp-role {
+  color: var(--accent);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.exp-team {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin: 4px 0 14px;
+}
+
+.exp-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-points li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.exp-points li::before {
+  content: "\203a";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 /* Projects */
@@ -313,8 +411,8 @@ section {
   filter: grayscale(0.2);
 }
 
-/* About */
-.about {
+/* Bio (education) */
+.bio {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 28px;
@@ -322,40 +420,52 @@ section {
 }
 
 @media (max-width: 640px) {
-  .about {
+  .bio {
     grid-template-columns: 1fr;
   }
 }
 
-.about-img img {
+.bio-img img {
   width: 100%;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   object-fit: cover;
 }
 
-.about-text h3 {
+.bio-text h3 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.about-text p {
+.bio-text .degree {
   color: var(--text-dim);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 8px 18px;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius);
-  color: #fff;
+.honours {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.btn:hover {
-  background: var(--accent);
-  text-decoration: none;
+.honours li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.honours li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.honours li.highlight {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 /* Footer */
