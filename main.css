@@ -41,6 +41,32 @@ main {
   padding: 60px 24px 40px;
 }
 
+/* Cursor spotlight */
+.spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(circle, rgba(220, 20, 60, 0.12) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.spotlight.active {
+  opacity: 1;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .spotlight {
+    display: none;
+  }
+}
+
 /* Left section rail */
 .rail {
   position: fixed;
