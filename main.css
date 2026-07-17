@@ -35,6 +35,14 @@ a:hover {
   text-decoration: underline;
 }
 
+code {
+  color: var(--accent);
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -179,6 +187,67 @@ main {
 .kv .sep {
   color: var(--text-dim);
   margin: 0 8px;
+}
+
+/* Interactive terminal prompt */
+.term-output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.term-entry {
+  margin-top: 10px;
+}
+
+.term-typed {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.term-typed::before {
+  content: attr(data-prompt);
+}
+
+.term-response {
+  color: var(--text);
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  margin-top: 4px;
+}
+
+.term-response a {
+  color: var(--accent);
+}
+
+.term-input-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.term-prompt {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  cursor: text;
+}
+
+.term-prompt #term-path {
+  color: var(--accent);
+}
+
+.term-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  caret-color: var(--accent);
 }
 
 /* Directory sections */
